@@ -1,5 +1,8 @@
 "use client"
 import React from "react"
+import TeamSection from '@/components/ui/TeamSection';
+import { cn } from "@/lib/utils";
+
 export default function App() {
 
   const kaloAdaVariable = [
