@@ -97,7 +97,7 @@ const teamMembers = [
   },
   {
     name: 'Nurdiansah',
-    text: '-',
+    text: 'kerja kerja kerja',
     image: '/assets/pasfoto/18.jpg',
   },
   {

@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 import { FloatingNav } from '@/components/ui/floating-navbar';
 import { Timeline } from '@/components/ui/timeline';
 import YearContent from '@/components/ui/YearContent';
+import Footer from "@/components/ui/Footer";
 export default function App() {
   const navItems = [
     {
@@ -213,6 +214,9 @@ export default function App() {
             ))}
           </div>
         </section>
+      </div>
+      <div>
+      <Footer />
       </div>
     </div>
   );
