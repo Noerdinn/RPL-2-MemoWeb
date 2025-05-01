@@ -134,11 +134,11 @@ export default function App() {
       </div>
       {/* Section 3 */}
       <div>
-        <section id="profile" className='pt-8 bg-white dark:bg-neutral-950' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+        <section id="profile" className='pt-8 md:px-8 px-4 bg-white dark:bg-neutral-950' style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
           <h2 className="text-3xl md:text-4xl mb-4 font-bold text-black dark:text-white">
             Apa kata <span className="text-sky-500">mereka?🔥</span>
           </h2>
-          <p className="text-neutral-700 mb-4 dark:text-neutral-300 text-md md:text-lg max-w-2xl mx-auto">
+          <p className="text-neutral-700 mb-8 dark:text-neutral-300 text-md md:text-lg max-w-2xl mx-auto">
             Mereka telah merasakan langsung dampak luar biasa dari apa yang kami lakukan.
             Inilah suara dan pengalaman nyata dari mereka yang telah menjadi bagian dari perjalanan ini.
           </p>
