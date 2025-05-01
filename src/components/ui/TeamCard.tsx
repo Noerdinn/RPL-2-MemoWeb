@@ -35,7 +35,7 @@ const TeamCard: FC<TeamCardProps> = ({ name, text, image }) => {
 
         {/* Kutipan */}
         <div className="flex-1">
-          <p className="italic text-sm text-gray-700">
+          <p className="italic text-sm text-gray-700 line-clamp-5">
             "{text}"
           </p>
         </div>

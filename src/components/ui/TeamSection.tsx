@@ -62,7 +62,7 @@ const teamMembers = [
   },
   {
     name: 'Laila Novianti',
-    text: '-',
+    text: 'hidup akan terus berjalan tanpa bertanya kita sanggup atau tidak',
     image: '/assets/pasfoto/11.jpg',
   },
   {
@@ -183,7 +183,7 @@ const TeamSection = () => {
   const visibleMembers = showAll ? teamMembers : teamMembers.slice(0, 6);
 
   return (
-    <div className="py-10 px-4 bg-gray-50 relative">
+    <div className="py-10 md:px-8 px-4 relative">
       <div className="relative">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
           {visibleMembers.map((member) => (
