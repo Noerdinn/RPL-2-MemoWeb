@@ -3,6 +3,8 @@ import React from 'react';
 import TeamSection from '@/components/ui/TeamSection';
 import { cn } from '@/lib/utils';
 import { FloatingNav } from '@/components/ui/floating-navbar';
+import { Timeline } from "@/components/ui/timeline";
+import YearContent from "@/components/ui/YearContent";
 export default function App() {
   const navItems = [
     {
@@ -23,7 +25,53 @@ export default function App() {
     },
   ];
 
-  const kaloAdaVariable = [{}];
+  const timelineData = [
+      {
+        title: "2022",
+        images: [
+          { src: "/assets/pentas2022.jpg", alt: "Pentas 2022" },
+          { src: "/assets/BK2022.jpg", alt: "BK 2022" },
+          { src: "/assets/hariguru2022.jpg", alt: "Hari Guru 2022" },
+        ],
+        quote:
+          "“Di tahun ini, kita melangkah dengan penuh ketidakpastian, namun setiap tawa, air mata, dan perjuangan menjadi fondasi mimpi yang tak pernah padam.🔥”",
+      },
+      {
+        title: "2023",
+        images: [
+          { src: "/assets/BK2023.jpg", alt: "BK2023" },
+          { src: "/assets/upacara2023.jpg", alt: "Upacara 2023" },
+          { src: "/assets/postud2023.jpg", alt: "Postud 2023" },
+          { src: "/assets/pentas2023.jpg", alt: "Pentas 2023" },
+          { src: "/assets/pakfajar2023.jpg", alt: "Pak Fajar 2023" },
+        ],
+        quote:
+          "“Walaupun di tahun ini waktu masih enggan berbisik tentang perpisahan, setiap detik bersama teman, guru, dan kenangan kecil mulai terukir abadi.🗺️”",
+      },
+      {
+        title: "2024",
+        images: [
+          { src: "/assets/papajar2024.jpg", alt: "Papajar 2024" },
+          { src: "/assets/perwalianpkl2024.jpg", alt: "Perwalian PKL 2024" },
+        ],
+        quote:
+          "“Di antara hiruk-pikuk tujuan dan tekanan, kita menemukan makna sejati dari kebersamaan—setiap canda, dan mimpi yang kita rajut bersama menjadi kenangan terbesar.📍”",
+      },
+      {
+        title: "2025",
+        images: [
+          { src: "/assets/bukber2025.jpg", alt: "Bukber 2025" },
+          { src: "/assets/ukk2025.jpg", alt: "UKK/UJIKOM 2025" },
+        ],
+        quote:
+          "“Kini kita berdiri di ujung perjalanan sekolah, menatap langit penuh bintang, menyadari bahwa setiap langkah kita di sini adalah awal dari masa lampau yang akan dikenang selamanya.🏁”",
+      },
+    ];
+  
+    const data = timelineData.map((item) => ({
+      title: item.title,
+      content: <YearContent images={item.images} quote={item.quote} />,
+    }));
   return (
     <div>
       {/* Section 1 */}
@@ -79,7 +127,11 @@ export default function App() {
         </section>
       </div>
       {/* Section 2 */}
-      <div></div>
+      <div>
+        <div className="relative w-full overflow-clip">
+          <Timeline data={data} />
+        </div>
+      </div>
       {/* Section 3 */}
       <div></div>
       {/* Section 4 */}
