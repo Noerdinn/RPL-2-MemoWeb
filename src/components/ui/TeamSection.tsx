@@ -67,7 +67,7 @@ const teamMembers = [
   },
   {
     name: 'Marcell Fia Dinata',
-    text: 'Selalu belajar untuk menggapai impian.',
+    text: 'Ga ada mimpi yang mustahil,asalkan niat dan mau berusaha.',
     image: '/assets/pasfoto/12.jpg',
   },
   {
@@ -107,7 +107,7 @@ const teamMembers = [
   },
   {
     name: 'Radithya Mahesa Syabil',
-    text: '-',
+    text: 'one wing is good, but two are better',
     image: '/assets/pasfoto/20.jpg',
   },
   {
@@ -157,7 +157,7 @@ const teamMembers = [
   },
   {
     name: 'Yohannes Anggi Sitinjak',
-    text: 'jangan lupa makan',
+    text: '-',
     image: '/assets/pasfoto/30.jpg',
   },
   {
@@ -183,7 +183,7 @@ const TeamSection = () => {
   const visibleMembers = showAll ? teamMembers : teamMembers.slice(0, 6);
 
   return (
-    <div className="py-10 md:px-8 px-4 relative">
+    <div className="py-10 relative">
       <div className="relative">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
           {visibleMembers.map((member) => (
