@@ -3,11 +3,11 @@ import { Quote } from 'lucide-react';
 
 type TeamCardProps = {
   name: string;
-  role: string;
+  text: string;
   image: string;
 };
 
-const TeamCard: FC<TeamCardProps> = ({ name, role, image }) => {
+const TeamCard: FC<TeamCardProps> = ({ name, text, image }) => {
   return (
     <div
       className="relative group bg-white rounded-xl p-4 w-full max-w-md border-2 border-gray-300 hover:border-blue-400 transition-all duration-300 text-gray-800"
@@ -20,7 +20,7 @@ const TeamCard: FC<TeamCardProps> = ({ name, role, image }) => {
         <div className="relative w-12 h-12 flex items-center justify-center">
           <div
             className="absolute inset-0 rounded-full border-2 border-dashed border-sky-500 group-hover:animate-spin z-15"
-            style={{ animationDuration: '5s' }}
+            style={{ animationDuration: '10s' }}
           />
           <Quote className="w-12 h-12 text-blue-500 bg-blue-100 rounded-full p-3 z-10" />
         </div>
@@ -36,7 +36,7 @@ const TeamCard: FC<TeamCardProps> = ({ name, role, image }) => {
         {/* Kutipan */}
         <div className="flex-1">
           <p className="italic text-sm text-gray-700">
-            "{role}"
+            "{text}"
           </p>
         </div>
       </div>
