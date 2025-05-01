@@ -61,7 +61,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </h3>
             </div>
 
-            <div className="relative italic rounded-lg mx-3 md:mx-auto bg-white p-2 pt-6 border-2 hover:border-sky-500 pl-20 pr-6 md:pt-8 md:pr-8 md:pl-8 w-full">
+            <div className="relative italic rounded-lg mx-3 md:mx-auto bg-white p-2 pt-6 bg-gradient-to-br from-white to-slate-50 border-2 border-slate-200  hover:border-sky-500 pl-20 pr-6 md:pt-8 md:pr-8 md:pl-8 w-full">
               <h3 className="md:hidden block text-2xl mb-4 text-left font-bold dark:text-neutral-500">
                 {item.title}
               </h3>
