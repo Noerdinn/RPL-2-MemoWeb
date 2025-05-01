@@ -14,6 +14,7 @@ export default function YearContent({ images, quote }: YearContentProps) {
           <img
             key={i}
             data-aos="fade-up"
+            data-aos-delay="200"
             src={img.src}
             alt={img.alt}
             width={500}
@@ -25,6 +26,7 @@ export default function YearContent({ images, quote }: YearContentProps) {
       <br />
       <blockquote
         data-aos="zoom-in"
+        data-aos-delay="300"
         className="mb-4 text-md font-normal text-neutral-600 md:text-lg dark:text-neutral-200"
       >
         {quote}
