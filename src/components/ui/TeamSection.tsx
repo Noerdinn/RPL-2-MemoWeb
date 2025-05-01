@@ -42,7 +42,7 @@ const teamMembers = [
   },
   {
     name: 'Dimas Prayoga',
-    text: '-',
+    text: 'Terus lah menjalankan hidup karena masih hidup',
     image: '/assets/pasfoto/7.jpg',
   },
   {
@@ -82,7 +82,7 @@ const teamMembers = [
   },
   {
     name: 'Muhammad Rizki Fadillah',
-    text: '-',
+    text: 'Akuuu kehabisan kata-kata sehingga ucapan kuuu terbata-bata. Kehidupan ituu ternyataaa tidak semudah apa yang ku kira, sehingga aku tertampar oleh betapa keras dan kejamnya realita. Kenangan kenangan ini akan ku simpan di dalam satu folder bernama Rpl 2. Semogaa kita bertemuu di dalam keadaan yang sukses dan bahagia. Akuu Rizki pamit undur diri, sekian dan terimakasih. ',
     image: '/assets/pasfoto/15.jpg',
   },
   {
@@ -107,7 +107,7 @@ const teamMembers = [
   },
   {
     name: 'Radithya Mahesa Syabil',
-    text: 'one wing is good, but two are better',
+    text: 'Another day of thanking God; for making me quit Mobile Legends',
     image: '/assets/pasfoto/20.jpg',
   },
   {
@@ -157,7 +157,7 @@ const teamMembers = [
   },
   {
     name: 'Yohannes Anggi Sitinjak',
-    text: '-',
+    text: 'Arti hidup itu adalah membuat seseorang mengenal dan mengingat kita',
     image: '/assets/pasfoto/30.jpg',
   },
   {
