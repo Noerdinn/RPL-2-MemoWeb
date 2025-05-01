@@ -53,38 +53,38 @@ export default function App() {
     {
       title: '2022',
       images: [
-        { src: '/assets/pentas2022.jpg', alt: 'Pentas 2022' },
-        { src: '/assets/BK2022.jpg', alt: 'BK 2022' },
-        { src: '/assets/hariguru2022.jpg', alt: 'Hari Guru 2022' },
+        { src: '/assets/timeline/pentas2022.jpg', alt: 'Pentas 2022' },
+        { src: '/assets/timeline/BK2022.jpg', alt: 'BK 2022' },
+        { src: '/assets/timeline/hariguru2022.jpg', alt: 'Hari Guru 2022' },
       ],
       quote: '“Di tahun ini, kita melangkah dengan penuh ketidakpastian, namun setiap tawa, air mata, dan perjuangan menjadi fondasi mimpi yang tak pernah padam.🔥”',
     },
     {
       title: '2023',
       images: [
-        { src: '/assets/BK2023.jpg', alt: 'BK2023' },
-        { src: '/assets/upacara2023.jpg', alt: 'Upacara 2023' },
-        { src: '/assets/postud2023.jpg', alt: 'Postud 2023' },
-        { src: '/assets/pentas2023.jpg', alt: 'Pentas 2023' },
-        { src: '/assets/pakfajar2023.jpg', alt: 'Pak Fajar 2023' },
+        { src: '/assets/timeline/BK2023.jpg', alt: 'BK2023' },
+        { src: '/assets/timeline/upacara2023.jpg', alt: 'Upacara 2023' },
+        { src: '/assets/timeline/postud2023.jpg', alt: 'Postud 2023' },
+        { src: '/assets/timeline/pentas2023.jpg', alt: 'Pentas 2023' },
+        { src: '/assets/timeline/pakfajar2023.jpg', alt: 'Pak Fajar 2023' },
       ],
       quote: '“Walaupun di tahun ini waktu masih enggan berbisik tentang perpisahan, setiap detik bersama teman, guru, dan kenangan kecil mulai terukir abadi.🗺️”',
     },
     {
       title: '2024',
       images: [
-        { src: '/assets/papajar2024.jpg', alt: 'Papajar 2024' },
-        { src: '/assets/perwalianpkl2024.jpg', alt: 'Perwalian PKL 2024' },
+        { src: '/assets/timeline/papajar2024.jpg', alt: 'Papajar 2024' },
+        { src: '/assets/timeline/perwalianpkl2024.jpg', alt: 'Perwalian PKL 2024' },
       ],
       quote: '“Di antara hiruk-pikuk tujuan dan tekanan, kita menemukan makna sejati dari kebersamaan—setiap canda, dan mimpi yang kita rajut bersama menjadi kenangan terbesar.📍”',
     },
     {
       title: '2025',
       images: [
-        { src: '/assets/bukber2025.jpg', alt: 'Bukber 2025' },
-        { src: '/assets/ukk2025.jpg', alt: 'UKK/UJIKOM 2025' },
+        { src: '/assets/timeline/bukber2025.jpg', alt: 'Bukber 2025' },
+        { src: '/assets/timeline/ukk2025.jpg', alt: 'UKK/UJIKOM 2025' },
       ],
-      quote: '“Kini kita berdiri di ujung perjalanan sekolah, menatap langit penuh bintang, menyadari bahwa setiap langkah kita di sini adalah awal dari masa lampau yang akan dikenang selamanya.🏁”',
+      quote: '“Kini kita berdiri di ujung perjalanan sekolah, menyadari bahwa setiap langkah kita di sini adalah awal dari masa lampau yang akan dikenang selamanya.🏁”',
     },
   ];
 
@@ -204,6 +204,7 @@ export default function App() {
                 <div className="absolute group-hover:opacity-100 opacity-0 h-40 w-40 -bottom-20 -right-20 bg-sky-800/40 blur-3xl z-[100000] transition-all duration-1000"></div>
 
                 <img
+                  loading="lazy"
                   src={`/assets/arsip/${img}`}
                   className="group-hover:scale-102 transition-all duration-1000 ease-in-out"
                   style={{ animationDuration: '0.1s', transitionProperty: 'all', animationDelay: 'unset' }}
