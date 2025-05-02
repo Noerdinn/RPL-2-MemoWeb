@@ -132,7 +132,7 @@ export default function App() {
                     <div className="relative h-16 w-16 flex items-center justify-center gap-3">
                       <div
                         tabIndex={0}
-                        className="absolute h-14 w-14 border-2 bg-sky-500/30 border-sky-600  rounded-full border-dashed  md:hover:animate-spin focus:animate-spin z-20"
+                        className="absolute h-14 w-14 border-2 bg-sky-500/30 border-sky-600  rounded-full border-dashed  animate-spin z-20"
                         style={{ animationDuration: '10s' }}
                       ></div>
                       <div className="absolute items-center z-10">
@@ -148,7 +148,7 @@ export default function App() {
                     <div className="relative h-16 w-16 flex items-center justify-center gap-3">
                       <div
                         tabIndex={0}
-                        className="absolute h-14 w-14 border-2 bg-pink-300/30 border-pink-400  rounded-full border-dashed md:hover:animate-spin focus:animate-spin z-20"
+                        className="absolute h-14 w-14 border-2 bg-pink-300/30 border-pink-400 rounded-full border-dashed animate-spin z-20"
                         style={{ animationDuration: '10s' }}
                       ></div>
                       <div className="absolute items-center z-10">
