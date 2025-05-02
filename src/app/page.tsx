@@ -229,7 +229,6 @@ export default function App() {
                 <div className="absolute group-hover:opacity-100 group-focus:opacity-100 opacity-0 md:h-40 h-30 md:w-40 w-30 -bottom-20 -right-20 bg-black/40 blur-3xl z-[100000] transition-all duration-1000"></div>
 
                 <img
-                  loading="lazy"
                   src={`/assets/arsip/${img}`}
                   className="group-hover:scale-105 transition-all w-full group-focus:scale-105 md:duration-1000 duration-500 ease-in-out select-none"
                   style={{ animationDuration: '0.1s', transitionProperty: 'all', animationDelay: 'unset' }}
