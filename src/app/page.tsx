@@ -5,7 +5,7 @@ import { cn } from '@/lib/utils';
 import { FloatingNav } from '@/components/ui/floating-navbar';
 import { Timeline } from '@/components/ui/timeline';
 import YearContent from '@/components/ui/YearContent';
-import Footer from "@/components/ui/Footer";
+import Footer from '@/components/ui/Footer';
 import CountUp from 'react-countup';
 export default function App() {
   const navItems = [
@@ -32,6 +32,7 @@ export default function App() {
     'img2.jpg',
     'img1.jpg',
     'img4.jpg',
+    'img23.jpg',
     'img5.jpg',
     'img3.jpg',
     'img18.jpg',
@@ -49,6 +50,7 @@ export default function App() {
     'img15.jpg',
     'img21.jpg',
     'img20.jpg',
+    'img22.jpg',
   ];
 
   const timelineData = [
@@ -128,7 +130,11 @@ export default function App() {
                 <div className="flex gap-8 justify-center pt-4">
                   <div className="flex items-center gap-1">
                     <div className="relative h-16 w-16 flex items-center justify-center gap-3">
-                      <div className="absolute h-14 w-14 border-2 bg-sky-500/30 border-sky-600  rounded-full border-dashed hover:animate-spin z-20" style={{ animationDuration: '10s' }}></div>
+                      <div
+                        tabIndex={0}
+                        className="absolute h-14 w-14 border-2 bg-sky-500/30 border-sky-600  rounded-full border-dashed  md:hover:animate-spin focus:animate-spin z-20"
+                        style={{ animationDuration: '10s' }}
+                      ></div>
                       <div className="absolute items-center z-10">
                         <p className="font-medium text-sky-700 text-xl">
                           <CountUp start={1} end={15} duration={5} />
@@ -140,7 +146,11 @@ export default function App() {
 
                   <div className="flex items-center gap-1">
                     <div className="relative h-16 w-16 flex items-center justify-center gap-3">
-                      <div className="absolute h-14 w-14 border-2 bg-pink-300/30 border-pink-400  rounded-full border-dashed hover:animate-spin z-20" style={{ animationDuration: '10s' }}></div>
+                      <div
+                        tabIndex={0}
+                        className="absolute h-14 w-14 border-2 bg-pink-300/30 border-pink-400  rounded-full border-dashed md:hover:animate-spin focus:animate-spin z-20"
+                        style={{ animationDuration: '10s' }}
+                      ></div>
                       <div className="absolute items-center z-10">
                         <p className="font-medium text-pink-500 text-xl">
                           <CountUp start={1} end={18} duration={5} />
@@ -151,12 +161,21 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="pt-6">
+                {/* <div className="pt-6">
                   <a
                     href="https://www.instagram.com/class.xiirpl2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                     className="py-2 px-8 bg-slate-50 border-dashed border-sky-300 hover:border-sky-400 border-3 rounded-lg text-sky-500 font-semibold"
                   >
                     Instagram
+                  </a>
+                </div> */}
+                <div className="pt-8">
+                  <a
+                    href="https://www.instagram.com/class.xiirpl2?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    className="relative py-2 px-20 bg-slate-50 border-sky-600 border-2 rounded-lg text-sky-600 font-semibold overflow-hidden group flex items-center justify-center mx-auto w-fit transition-all ease-in-out duration-1000"
+                  >
+                    <span className="absolute bg-sky-500 w-full h-0 left-0 group-hover:h-full group-active:h-full transition-all ease-in-out md:duration-500 duration-300"></span>
+                    <span className="relative group-hover:text-slate-50 group-active:text-slate-50 transition-all ease-in-out md:duration-500 duration-300">Instagram</span>
                   </a>
                 </div>
               </div>
@@ -204,15 +223,15 @@ export default function App() {
           </div>
           <div className="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4 md:px-8 px-4">
             {images.map((img, index) => (
-              <div className="relative overflow-hidden rounded-lg group" key={index} data-aos="fade-up" data-aos-duration="700" data-aos-delay={index * 50}>
-                <div className="absolute group-hover:opacity-100 opacity-0 h-40 w-40 -top-20 -left-20 bg-red-700/35 blur-3xl z-[100000] transition-all duration-1000"></div>
+              <div tabIndex={0} className="relative overflow-hidden rounded-lg group" key={index} data-aos="fade-up" data-aos-duration="700" data-aos-delay={index * 50}>
+                <div className="absolute group-hover:opacity-100 group-focus:opacity-100 opacity-0 md:h-40 h-30 md:w-40 w-30 -top-20 -left-20 bg-black/35 blur-3xl z-[100000] transition-all duration-1000"></div>
 
-                <div className="absolute group-hover:opacity-100 opacity-0 h-40 w-40 -bottom-20 -right-20 bg-sky-800/40 blur-3xl z-[100000] transition-all duration-1000"></div>
+                <div className="absolute group-hover:opacity-100 group-focus:opacity-100 opacity-0 md:h-40 h-30 md:w-40 w-30 -bottom-20 -right-20 bg-black/40 blur-3xl z-[100000] transition-all duration-1000"></div>
 
                 <img
                   loading="lazy"
                   src={`/assets/arsip/${img}`}
-                  className="group-hover:scale-102 transition-all duration-1000 ease-in-out"
+                  className="group-hover:scale-105 transition-all w-full group-focus:scale-105 md:duration-1000 duration-500 ease-in-out select-none"
                   style={{ animationDuration: '0.1s', transitionProperty: 'all', animationDelay: 'unset' }}
                 />
               </div>
@@ -221,7 +240,7 @@ export default function App() {
         </section>
       </div>
       <div>
-      <Footer />
+        <Footer />
       </div>
     </div>
   );
