@@ -202,7 +202,7 @@ const TeamSection = () => {
         <div className="text-center mt-6">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="px-4 py-2 bg-sky-500 text-white text-sm font-semibold rounded hover:bg-sky-600 transition"
+            className="px-4 py-2 bg-sky-500 text-white text-sm font-semibold rounded focus:bg-sky-600 transition"
           >
             {showAll ? 'Tutup' : 'Lihat Lainnya'}
           </button>
