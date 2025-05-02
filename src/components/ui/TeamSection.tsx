@@ -107,7 +107,7 @@ const teamMembers = [
   },
   {
     name: 'Radithya Mahesa Syabil',
-    text: 'Another day of thanking God; for making me quit Mobile Legends',
+    text: 'wi wok de tok not onle tok de tok',
     image: '/assets/pasfoto/20.jpg',
   },
   {
