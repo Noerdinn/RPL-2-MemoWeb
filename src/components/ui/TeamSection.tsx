@@ -8,7 +8,7 @@ const teamMembers = [
   {
     name: 'Thomas Adi Nugroho (Wali Kelas)',
     text: 'Mantap abis 🔥',
-    image: '/assets/pasfoto/0.jpg',
+    image: '/assets/pasfoto/walikelas.jpg',
   },
   {
     name: 'Aditya Pratama',
@@ -27,7 +27,7 @@ const teamMembers = [
   },
   {
     name: 'Ardita',
-    text: 'Segera Hijrah karena Kiamat udah Deket',
+    text: 'Hijrah bukan pilihan, tapi kewajiban',
     image: '/assets/pasfoto/4.jpg',
   },
   {
