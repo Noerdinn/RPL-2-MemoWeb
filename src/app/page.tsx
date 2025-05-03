@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import TeamSection from '@/components/ui/TeamSection';
-import { cn } from '@/lib/utils';
 import { FloatingNav } from '@/components/ui/floating-navbar';
 import { Timeline } from '@/components/ui/timeline';
 import YearContent from '@/components/ui/YearContent';
@@ -130,11 +129,7 @@ export default function App() {
                 <div className="flex gap-8 justify-center pt-4">
                   <div className="flex items-center gap-1">
                     <div className="relative h-16 w-16 flex items-center justify-center gap-3">
-                      <div
-                        tabIndex={0}
-                        className="absolute h-14 w-14 border-2 bg-sky-500/30 border-sky-600  rounded-full border-dashed  animate-spin z-20"
-                        style={{ animationDuration: '10s' }}
-                      ></div>
+                      <div tabIndex={0} className="absolute h-14 w-14 border-2 bg-sky-500/30 border-sky-600  rounded-full border-dashed  animate-spin z-20" style={{ animationDuration: '10s' }}></div>
                       <div className="absolute items-center z-10">
                         <p className="font-medium text-sky-700 text-xl">
                           <CountUp start={1} end={15} duration={5} />
@@ -146,11 +141,7 @@ export default function App() {
 
                   <div className="flex items-center gap-1">
                     <div className="relative h-16 w-16 flex items-center justify-center gap-3">
-                      <div
-                        tabIndex={0}
-                        className="absolute h-14 w-14 border-2 bg-pink-300/30 border-pink-400 rounded-full border-dashed animate-spin z-20"
-                        style={{ animationDuration: '10s' }}
-                      ></div>
+                      <div tabIndex={0} className="absolute h-14 w-14 border-2 bg-pink-300/30 border-pink-400 rounded-full border-dashed animate-spin z-20" style={{ animationDuration: '10s' }}></div>
                       <div className="absolute items-center z-10">
                         <p className="font-medium text-pink-500 text-xl">
                           <CountUp start={1} end={18} duration={5} />
