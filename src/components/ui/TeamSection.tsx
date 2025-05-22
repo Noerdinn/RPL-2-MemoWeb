@@ -107,7 +107,7 @@ const teamMembers = [
   },
   {
     name: 'Radithya Mahesa Syabil',
-    text: 'wi wok de tok not onle tok de tok',
+    text: 'Mau bagaimana lagi',
     image: '/assets/pasfoto/20.jpg',
   },
   {
