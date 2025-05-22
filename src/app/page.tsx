@@ -225,6 +225,35 @@ export default function App() {
           <Timeline data={data} />
         </div>
       </div>
+
+      <div data-aos="zoom-in" data-aos-duration="500" className="md:px-28 px-3 md:py-10 py-28 relative">
+        <div className="md:flex flex-row relative gap-20 md:px-10 px-5 py-5 overflow-hidden border-slate-100 bg-gradient-to-t from-slate-50 to-white border-2 rounded-2xl">
+          <div className="absolute -top-20 -left-20 h-40 w-40 blur-3xl bg-sky-500/50 rounded-full"></div>
+          <div className="absolute -bottom-20 -right-20 h-40 w-40 blur-3xl bg-sky-500/50 rounded-full"></div>
+          <div className="flex items-center">
+            <div>
+              <div className="md:flex flex-row text-center gap-4 items-center mb-4">
+                <h2 className="md:text-3xl text-2xl font-semibold md:mb-0 md:mt-0 mt-4 mb-1.5">Thomas Adi Nugroho</h2>
+                <small
+                  className="bg-sky-500/20
+                 text-sky-700 px-6 py-0.5 rounded-full md:text-lg text-lg font-medium"
+                >
+                  Wali Kelas
+                </small>
+              </div>
+              <p className="md:text-left text-center">
+                Guru sekaligus orang tua kedua di sekolah, yang sabarnya nggak ada batasnya. Pak Thomas, makasih udah jadi sosok yang nggak cuma ngatur kelas, tapi juga nuntun, dengerin, dan sabar
+                ngadepin semua kelakuan kami. Maaf kalau selama ini lebih sering bikin pusing daripada nurut, tapi percayalah, semua yang Bapak/Ibu lakukan bakal kami bawa terus ke masa depan. Terima
+                kasih udah percaya sama kami — satu kelas, satu cerita, satu hati.
+              </p>
+            </div>
+          </div>
+          <div className="relative flex items-center">
+            <img data-aos="flip-left" data-aos-delay="200" data-aos-duration="500" src="/assets/Wali kelas.png" alt="" />
+          </div>
+        </div>
+      </div>
+
       {/* Section 3 */}
       <div>
         <section
