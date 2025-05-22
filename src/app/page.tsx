@@ -259,7 +259,7 @@ export default function App() {
                   Wali Kelas
                 </small>
               </div>
-              <p className="md:text-left md:text-lg text-sm text-center">
+              <p className="leading-[1.8] md:text-left md:text-lg text-sm text-center">
                 Guru sekaligus orang tua kedua di sekolah, yang sabarnya nggak
                 ada batasnya. Pak Thomas, makasih udah jadi sosok yang nggak
                 cuma ngatur kelas, tapi juga nuntun, dengerin, dan sabar
