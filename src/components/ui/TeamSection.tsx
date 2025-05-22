@@ -5,11 +5,11 @@ import { useState } from 'react';
 import TeamCard from '@/components/ui/TeamCard';
 
 const teamMembers = [
-  {
-    name: 'Thomas Adi Nugroho (Wali Kelas)',
-    text: 'Mantap abis 🔥',
-    image: '/assets/pasfoto/walikelas.jpg',
-  },
+  // {
+  //   name: 'Thomas Adi Nugroho (Wali Kelas)',
+  //   text: 'Mantap abis 🔥',
+  //   image: '/assets/pasfoto/walikelas.jpg',
+  // },
   {
     name: 'Aditya Pratama',
     text: 'jaw jaw jaw jaw jaw',
