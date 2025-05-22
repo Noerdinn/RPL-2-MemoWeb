@@ -214,3 +214,4 @@ export const FloatingNav = ({
     </>
   );
 };
+export default FloatingNav;
